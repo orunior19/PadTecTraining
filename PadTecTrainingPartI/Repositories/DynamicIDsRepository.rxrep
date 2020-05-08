@@ -1,0 +1,58 @@
+﻿<repository
+id="d69daec5-210a-49c6-bf06-338646ceaa4c"
+name="DynamicIDsRepository">
+	<codegen
+	classname="DynamicIDsRepository"
+	namespace="PadTecTrainingPartI.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="ee9b2c34-3ee1-49cd-b61d-35277a5aff9c"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="bb0dbf54-cfcc-4fe5-a33b-0007602c6673"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="checkbox,control,nativewindow"
+			capname="checkbox"
+			id="5bb61cdc-86f5-4f94-aeec-f6ebc541fd44"
+			name="ChkShowDynamicID"
+			refimgid="c1e14c0a-66db-4689-afbf-240c4b8ca4c1"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabDynamic']/checkbox[@controlname='chkShowDynamicID']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabDynamic']/checkbox[@controlname='chkShowDynamicID']
+			</item>
+			<item
+			addcaps="picture,control,nativewindow"
+			capname="picture"
+			id="8f14f2a9-ac96-4de5-9bef-22598673847a"
+			name="PictureBox"
+			refimgid="441b7f74-eae7-4c20-9a2c-6f716169e717"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabDynamic']/?/?/picture[@controltypename='PictureBox']
+			</item>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAJtJREFUOE9jQAYhISGVQUFBv4jEM6DaICA4OPgUEHdBuaQDoOb/IPoB
+m/C8++xCG+GYFRNfFxbmBWtCBiAD0tLSWO9zClncZxd2xIeBNjFDtSEAyAAg/g3En7BgkBy6WC1U
+KwQABf7X19czQbl4ATAA5YHqf0O5EAAyAMokCowaMKwNYITwCAMMA4CpKwBkCBA3EIHnAzHQAAYG
+AN36kSlpO4aKAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

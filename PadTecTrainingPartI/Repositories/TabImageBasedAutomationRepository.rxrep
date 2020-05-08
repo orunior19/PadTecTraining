@@ -1,0 +1,53 @@
+﻿<repository
+id="e0aa2e5c-dd89-4fc5-8e18-2559a66fe6f6"
+name="TabImageBasedAutomationRepository">
+	<codegen
+	classname="TabImageBasedAutomationRepository"
+	namespace="PadTecTrainingPartI.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="3ae96d15-0947-4e22-901a-a562af545409"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="e1b3d31d-b86e-4391-adda-303ea1a080f5"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpagelist,accessible"
+			capname="tabpage"
+			id="0569e7da-8f43-4509-82b2-d0729017dda4"
+			name="TabPage"
+			refimgid="c83fc886-765e-4a90-83f2-0f03e7b9ad6c"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/?/?/tabpage[@accessiblename=$varTab]
+			</item>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAJtJREFUOE9jQAYhISGVQUFBv4jEM6DaICA4OPgUEHdBuaQDoOb/IPoB
+m/C8++xCG+GYFRNfFxbmBWtCBiAD0tLSWO9zClncZxd2xIeBNjFDtSEAyAAg/g3En7BgkBy6WC1U
+KwQABf7X19czQbl4ATAA5YHqf0O5EAAyAMokCowaMKwNYITwCAMMA4CpKwBkCBA3EIHnAzHQAAYG
+AN36kSlpO4aKAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="29eda873-150d-46d4-841f-81676efb03d0"
+		name="varTab">
+			Image-based automation
+		</var>
+	</variables>
+</repository>

@@ -1,0 +1,114 @@
+﻿<repository
+id="92af4717-d821-471d-a241-196b7ad8b0b0"
+name="TabUiElementsRepository">
+	<codegen
+	classname="TabUiElementsRepository"
+	namespace="PadTecTrainingPartI.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="f63e9464-0aa4-4e17-ad72-98dddd6dd876"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="46af0e92-da4e-45c1-91ef-79728195b9b2"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,control,nativewindow"
+			capname="text"
+			id="0d84e17b-cf51-44e2-a3c1-fff7ee284032"
+			name="LabelTable"
+			refimgid="760763d6-616e-43a6-9a91-acfea7af5c7f"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/?/text[@accessiblename='Table']
+			</item>
+			<folder
+			capname="table"
+			id="6ef26679-1fbb-4003-aa99-f2a3c55d1b29"
+			isrooted="True"
+			name="DataTable"
+			refimgid="c872a6ae-827f-44e3-a143-b482fabf6981"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="cell"
+				id="2e5fa68d-be46-4e3a-bbb2-2ae11aa0f61f"
+				name="IdentifyFisrtNameValue"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/table[@controlname='dataGridView1']//cell[@text='Thomas' and @accessiblename&gt;'FirstName']
+				</item>
+				<item
+				capname="cell"
+				id="a5894810-a9ee-4c87-b231-c61f7b3b38ef"
+				name="IdentifyAgeValue"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/table[@controlname='dataGridView1']//cell[@text=$Age and @accessiblename&gt;'Age']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabUIElements']/table[@controlname='dataGridView1']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACbSURBVDhPY0AGISEhlUFBQb+IxDOg2iAgODj4
+FBB3QbmkA6Dm/yD6AZvwvPvsQhvhmBUTXxcW5gVrQgYgA9LS0ljvcwpZ3GcXdsSHgTYxQ7UhAMgA
+IP4NxJ+wYJAculgtVCsEAAX+19fXM0G5eAEwAOWB6n9DuRAAMgDKJAqMGjCsDWCE8AgDDAOAqSsA
+ZAgQNxCB5wMx0AAGBgDd+pEpaTuGigAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<folder
+		capname="unknown"
+		id="20338f10-32dc-4a45-b1a2-c4c8d291c9fc"
+		isrooted="False"
+		name="GroupBoxArea"
+		searchtimeout="0ms">
+			<folder
+			capname="unknown"
+			id="de117b06-053f-4268-b7d3-d1181f5fca37"
+			isrooted="True"
+			name="GroupBoxRadioButton"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="2dbbc9e0-1da5-4f25-9e99-663ead32372b"
+				name="RedLight"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/tabpagelist/tabpage/container[@controlname='grpBox']/container[@controlname='grpBoxRadioButton']/?/?/radiobutton[@text='Red light']
+				</item>
+				<item
+				addcaps="radiobutton,control,nativewindow"
+				capname="radiobutton"
+				id="7d0d91dd-0f5e-42d8-9be4-fc8cd1ed706d"
+				name="RadioButtonGreenLight"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/tabpagelist/tabpage/container[@controlname='grpBox']/container[@controlname='grpBoxRadioButton']/?/?/radiobutton[@text='Green light']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/tabpagelist/tabpage/container[@controlname='grpBox']/container[@controlname='grpBoxRadioButton']/?/?
+				</basepath>
+			</folder>
+		</folder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="b7eb0dde-1776-45c7-a7b2-c8fd165314ec"
+		name="Age">
+			42
+		</var>
+	</variables>
+</repository>

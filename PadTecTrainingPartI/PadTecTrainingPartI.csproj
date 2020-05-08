@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{1E14D83A-3B59-43F3-9AA5-486B6027016B}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PadTecTrainingPartI</RootNamespace>
+    <AssemblyName>PadTecTrainingPartI</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>8f5d19ac-14de-413e-8616-00988e54fb71</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8e926b46-db07-49f3-958c-a60fa8f95987</id>
+    </Compile>
+    <Compile Include="CloseAUT.cs">
+      <BoundTo>ea10b848-8932-4626-8eab-2293c4f2521c</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>074e3a5d-cadc-4b43-8bc7-55f383cc44bc</id>
+    </Compile>
+    <Compile Include="CloseAUT.UserCode.cs">
+      <BoundTo>ea10b848-8932-4626-8eab-2293c4f2521c</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>12df1530-d08a-4b9a-b5de-858666f6c064</id>
+    </Compile>
+    <Compile Include="Modules\Geral\DelayTwoSeconds.cs">
+      <BoundTo>f107a1b5-c285-40fd-9d61-b77be104f3da</BoundTo>
+      <DependentUpon>DelayTwoSeconds.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>880c9751-01c6-4151-9be9-7112bcaa0c4a</id>
+    </Compile>
+    <Compile Include="Modules\Geral\DelayTwoSeconds.UserCode.cs">
+      <BoundTo>f107a1b5-c285-40fd-9d61-b77be104f3da</BoundTo>
+      <DependentUpon>DelayTwoSeconds.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c8b558f0-aa54-4f94-a651-a0c605219bfa</id>
+    </Compile>
+    <Compile Include="Modules\Geral\SelectTab.cs">
+      <DependentUpon>SelectTab.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a6f85cf4-c8c6-4edd-a161-ae3e7624c562</id>
+      <BoundTo>e122c262-befa-4caa-a976-f38425f80341</BoundTo>
+    </Compile>
+    <Compile Include="Modules\Geral\SelectTab.UserCode.cs">
+      <DependentUpon>SelectTab.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>50f72394-b72f-4fff-ac16-889cb4350a90</id>
+      <BoundTo>e122c262-befa-4caa-a976-f38425f80341</BoundTo>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\AddPersons.cs">
+      <DependentUpon>AddPersons.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cabfcff6-9ae1-4ee9-ac17-0011329ada05</id>
+      <BoundTo>b784e608-2ee9-46ad-bf33-920c91cb330a</BoundTo>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\AddPersons.UserCode.cs">
+      <DependentUpon>AddPersons.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ff30cc89-ec7b-4668-97a4-d6fb203a09c1</id>
+      <BoundTo>b784e608-2ee9-46ad-bf33-920c91cb330a</BoundTo>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\DatabaseResult.cs">
+      <BoundTo>3b4d5c76-25d5-4d67-9f5d-d284b32f3d6a</BoundTo>
+      <DependentUpon>DatabaseResult.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e3393de-7eae-4373-9c90-ba88f9286d6e</id>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\DatabaseResult.UserCode.cs">
+      <BoundTo>3b4d5c76-25d5-4d67-9f5d-d284b32f3d6a</BoundTo>
+      <DependentUpon>DatabaseResult.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>47b88c45-aa51-4b4a-b3b7-bf0762ac74bb</id>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\DeletePersons.cs">
+      <BoundTo>4e6b96ab-b8a0-4197-bd20-b7d5b2c93585</BoundTo>
+      <DependentUpon>DeletePersons.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>39538ed0-4e5b-4775-8574-17c34ff2774f</id>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\DeletePersons.UserCode.cs">
+      <BoundTo>4e6b96ab-b8a0-4197-bd20-b7d5b2c93585</BoundTo>
+      <DependentUpon>DeletePersons.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>927d2f20-998e-4e44-8c4f-957b15349ab2</id>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\WriteCountNumber.cs">
+      <BoundTo>4a5fda4e-24f3-40dc-88a0-b82d1c3a1600</BoundTo>
+      <DependentUpon>WriteCountNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>471f1226-8aa4-4e13-860f-a42d4eb5c22e</id>
+    </Compile>
+    <Compile Include="Modules\TabDataBase\WriteCountNumber.UserCode.cs">
+      <BoundTo>4a5fda4e-24f3-40dc-88a0-b82d1c3a1600</BoundTo>
+      <DependentUpon>WriteCountNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e2aaeccb-2a9a-4472-ac0c-dd1282153d5b</id>
+    </Compile>
+    <Compile Include="Modules\TabDynamicIDs\ShowImage.cs">
+      <BoundTo>b4dcaded-0f70-4dd6-9cbc-5ec0bdc32d83</BoundTo>
+      <DependentUpon>ShowImage.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c849e8d4-8820-458e-b4d9-7e30c8c18f25</id>
+    </Compile>
+    <Compile Include="Modules\TabDynamicIDs\ShowImage.UserCode.cs">
+      <BoundTo>b4dcaded-0f70-4dd6-9cbc-5ec0bdc32d83</BoundTo>
+      <DependentUpon>ShowImage.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69c3dc5f-6150-4f00-94ab-a99d6ebe57d8</id>
+    </Compile>
+    <Compile Include="Modules\TabDynamicIDs\ValidateImageExist.cs">
+      <BoundTo>140699b0-58a3-406c-93e6-f0725646db17</BoundTo>
+      <DependentUpon>ValidateImageExist.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9fbbee22-c3c5-40f9-91b8-e07167aaee0b</id>
+    </Compile>
+    <Compile Include="Modules\TabDynamicIDs\ValidateImageExist.UserCode.cs">
+      <BoundTo>140699b0-58a3-406c-93e6-f0725646db17</BoundTo>
+      <DependentUpon>ValidateImageExist.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d0a4c4f-1487-4707-8f34-34339fc8ec0f</id>
+    </Compile>
+    <Compile Include="Modules\TabUi-Element\IndentifyUserRow.cs">
+      <BoundTo>3b1cb408-0372-4d49-a69f-bbeedb6d2c5c</BoundTo>
+      <DependentUpon>IndentifyUserRow.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f4a0f57-fb3d-447b-a9e5-6bdc4988c027</id>
+    </Compile>
+    <Compile Include="Modules\TabUi-Element\IndentifyUserRow.UserCode.cs">
+      <BoundTo>3b1cb408-0372-4d49-a69f-bbeedb6d2c5c</BoundTo>
+      <DependentUpon>IndentifyUserRow.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>55b3f5a5-b3f9-43f5-8825-668ec2b1c83e</id>
+    </Compile>
+    <Compile Include="Modules\TabUi-Element\SelectRedLight.cs">
+      <BoundTo>37056bfd-303f-446b-b6f4-f3da17ed0179</BoundTo>
+      <DependentUpon>SelectRedLight.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e8fcd73-0547-4fcc-be1f-bc0b1cfeb4a2</id>
+    </Compile>
+    <Compile Include="Modules\TabUi-Element\SelectRedLight.UserCode.cs">
+      <BoundTo>37056bfd-303f-446b-b6f4-f3da17ed0179</BoundTo>
+      <DependentUpon>SelectRedLight.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>74d8c1d7-d493-41de-9ea7-9d1684c3b36d</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>e6a83b5d-06ea-40ae-b7a0-3cdfb005a1b9</id>
+    </Compile>
+    <Compile Include="InsertName.cs">
+      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17cdb5ec-602e-42fb-a318-fa06bd680c82</id>
+    </Compile>
+    <Compile Include="InsertName.UserCode.cs">
+      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fea2254-186b-4dcf-9541-996a922f1f17</id>
+    </Compile>
+    <Compile Include="Repositories\DynamicIDsRepository.cs">
+      <BoundTo>9565DEAB-1714-4068-BD05-3655FECDCC74</BoundTo>
+      <DependentUpon>DynamicIDsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>ca012909-26bf-4272-bc99-06d142832500</id>
+    </Compile>
+    <Compile Include="Repositories\SelectTabRepository.cs">
+      <BoundTo>8B95DC42-4079-40C1-BCC7-AD38A09F1626</BoundTo>
+      <DependentUpon>SelectTabRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>84d9b882-4a44-4cdd-8c42-a874f5793c83</id>
+    </Compile>
+    <Compile Include="Repositories\TabIntroductionRepository.cs">
+      <DependentUpon>TabIntroductionRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>28e79874-8cae-4512-a89a-87c75254060e</id>
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+    </Compile>
+    <Compile Include="Repositories\TabImageBasedAutomationRepository.cs">
+      <DependentUpon>TabImageBasedAutomationRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>990370e3-fe4b-4dbc-9a3f-0752c9d46c7d</id>
+      <BoundTo>D7B4D7FB-7F52-4F06-93B3-342053D049C7</BoundTo>
+    </Compile>
+    <Compile Include="Repositories\TabTestDataBaseRepository.cs">
+      <DependentUpon>TabTestDataBaseRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>6668af0a-13e3-4b48-8bf5-8b99eeef8e89</id>
+      <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
+    </Compile>
+    <Compile Include="Repositories\TabUiElementsRepository.cs">
+      <BoundTo>024EF950-FE4D-4A5E-B4B3-6FB378725522</BoundTo>
+      <DependentUpon>TabUiElementsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>b2ff08a0-e74e-4401-9f3b-751606bcad77</id>
+    </Compile>
+    <Compile Include="StartAUT.cs">
+      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17f56b2b-0ab7-4e35-8dc3-e4f7eae1414d</id>
+    </Compile>
+    <Compile Include="StartAUT.UserCode.cs">
+      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a014e61-9142-4aae-8a6a-3aae146dedc5</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SecondSuite.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>00bb1864-65ff-405d-91d9-e858250f1762</id>
+    </Content>
+    <None Include="app.config">
+      <id>f11e5d6a-489e-40cb-813f-fc95b244cc0c</id>
+    </None>
+    <None Include="AUT Aplication Under Test\RxDemoApp.exe">
+      <id>7aebb4ed-7e21-4dce-8eb7-7ed5c0b44ff1</id>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CloseAUT.rxrec">
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+      <id>ea10b848-8932-4626-8eab-2293c4f2521c</id>
+      <recordtableid>45f7962c-069e-40a5-a8c6-21244136a09c</recordtableid>
+    </None>
+    <None Include="DataBase.xlsx">
+      <id>1101ff04-5599-4cc7-8679-50e0d0b5f821</id>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="InsertName.rxrec">
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+      <id>c20d0c31-5450-481d-ad45-f3b1d4abdd56</id>
+      <recordtableid>6dfd00bb-13b3-4bf4-94ae-da918ce27b3a</recordtableid>
+    </None>
+    <None Include="Modules\Geral\DelayTwoSeconds.rxrec">
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+      <id>f107a1b5-c285-40fd-9d61-b77be104f3da</id>
+      <recordtableid>9876770f-f660-424f-8733-18e1879ca554</recordtableid>
+    </None>
+    <None Include="Modules\Geral\SelectTab.rxrec">
+      <id>e122c262-befa-4caa-a976-f38425f80341</id>
+      <recordtableid>cf02b4fd-375f-4ec2-a611-af163aaae09a</recordtableid>
+      <BoundTo>8B95DC42-4079-40C1-BCC7-AD38A09F1626</BoundTo>
+    </None>
+    <None Include="Modules\TabDataBase\AddPersons.rxrec">
+      <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
+      <id>b784e608-2ee9-46ad-bf33-920c91cb330a</id>
+      <recordtableid>7fead2ef-72cc-400c-9ec5-5cd0f9b846ec</recordtableid>
+    </None>
+    <None Include="Modules\TabDataBase\DatabaseResult.rxrec">
+      <id>3b4d5c76-25d5-4d67-9f5d-d284b32f3d6a</id>
+      <recordtableid>15e47028-59a8-4f1a-83bc-580584bcc9d6</recordtableid>
+      <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
+    </None>
+    <None Include="Modules\TabDataBase\DeletePersons.rxrec">
+      <id>4e6b96ab-b8a0-4197-bd20-b7d5b2c93585</id>
+      <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
+      <recordtableid>d03df101-e315-4017-aa83-667f740a381d</recordtableid>
+    </None>
+    <None Include="Modules\TabDataBase\WriteCountNumber.rxrec">
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+      <id>4a5fda4e-24f3-40dc-88a0-b82d1c3a1600</id>
+      <recordtableid>d96d098a-c0cd-49a8-9807-91355b1d8c64</recordtableid>
+    </None>
+    <None Include="Modules\TabDynamicIDs\ShowImage.rxrec">
+      <id>b4dcaded-0f70-4dd6-9cbc-5ec0bdc32d83</id>
+      <recordtableid>b9a69c9a-66b3-41d7-b7dc-d47ddb865182</recordtableid>
+      <BoundTo>9565DEAB-1714-4068-BD05-3655FECDCC74</BoundTo>
+    </None>
+    <None Include="Modules\TabDynamicIDs\ValidateImageExist.rxrec">
+      <id>140699b0-58a3-406c-93e6-f0725646db17</id>
+      <recordtableid>ce00c590-e6e1-4451-a747-08861144a413</recordtableid>
+      <BoundTo>9565DEAB-1714-4068-BD05-3655FECDCC74</BoundTo>
+    </None>
+    <None Include="Modules\TabUi-Element\IndentifyUserRow.rxrec">
+      <id>3b1cb408-0372-4d49-a69f-bbeedb6d2c5c</id>
+      <recordtableid>4a975b1d-31c4-4c6f-8884-794144cd15d1</recordtableid>
+      <BoundTo>024EF950-FE4D-4A5E-B4B3-6FB378725522</BoundTo>
+    </None>
+    <None Include="Modules\TabUi-Element\SelectRedLight.rxrec">
+      <id>37056bfd-303f-446b-b6f4-f3da17ed0179</id>
+      <recordtableid>d1c0fbec-24a6-495a-85aa-94337ff43edc</recordtableid>
+      <BoundTo>024EF950-FE4D-4A5E-B4B3-6FB378725522</BoundTo>
+    </None>
+    <Content Include="PadTecTrainingPartI.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4c78e59a-2f1f-4a8b-9dec-ef9edcd4e5bc</id>
+    </Content>
+    <None Include="Repositories\DynamicIDsRepository.rximg">
+      <BoundTo>9565DEAB-1714-4068-BD05-3655FECDCC74</BoundTo>
+      <DependentUpon>DynamicIDsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d355b8ec-245d-42e6-a0dc-703f3c72e54a</id>
+    </None>
+    <None Include="Repositories\DynamicIDsRepository.rxrep">
+      <id>9565DEAB-1714-4068-BD05-3655FECDCC74</id>
+      <repoid>d69daec5-210a-49c6-bf06-338646ceaa4c</repoid>
+      <reporootid>ee9b2c34-3ee1-49cd-b61d-35277a5aff9c</reporootid>
+    </None>
+    <None Include="Repositories\SelectTabRepository.rximg">
+      <BoundTo>8B95DC42-4079-40C1-BCC7-AD38A09F1626</BoundTo>
+      <DependentUpon>SelectTabRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d06dd55f-b977-4b45-be8e-04a8d8ebd485</id>
+    </None>
+    <None Include="Repositories\SelectTabRepository.rxrep">
+      <id>8B95DC42-4079-40C1-BCC7-AD38A09F1626</id>
+      <repoid>da9876ab-02dd-4284-8e85-af6dc4471175</repoid>
+      <reporootid>43d743c3-ce4c-4cbc-a29f-5479a815e3ea</reporootid>
+    </None>
+    <None Include="Repositories\TabIntroductionRepository.rximg">
+      <DependentUpon>TabIntroductionRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>cb2585e5-54b7-4318-a754-27c404dd03ab</id>
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+    </None>
+    <None Include="Repositories\TabIntroductionRepository.rxrep">
+      <id>8f5d19ac-14de-413e-8616-00988e54fb71</id>
+      <repoid>a48f6cd7-90b5-425a-bb3c-6eab79ba34fb</repoid>
+      <reporootid>82029641-968e-469d-9a20-d3e878f2c53d</reporootid>
+    </None>
+    <None Include="Repositories\TabImageBasedAutomationRepository.rximg">
+      <DependentUpon>TabImageBasedAutomationRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>1523e10f-0c2f-4a14-8848-84c9fa4e93f6</id>
+      <BoundTo>D7B4D7FB-7F52-4F06-93B3-342053D049C7</BoundTo>
+    </None>
+    <None Include="Repositories\TabImageBasedAutomationRepository.rxrep">
+      <id>D7B4D7FB-7F52-4F06-93B3-342053D049C7</id>
+      <repoid>e0aa2e5c-dd89-4fc5-8e18-2559a66fe6f6</repoid>
+      <reporootid>3ae96d15-0947-4e22-901a-a562af545409</reporootid>
+    </None>
+    <None Include="Repositories\TabTestDataBaseRepository.rximg">
+      <DependentUpon>TabTestDataBaseRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>b84844a8-aec7-45c1-b40e-c0b5ff76226d</id>
+      <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
+    </None>
+    <None Include="Repositories\TabTestDataBaseRepository.rxrep">
+      <id>570F74AC-B7B9-4339-B199-2C1D62BF26DA</id>
+      <repoid>61966f2e-6a4e-41f7-9a2b-10fec406aea5</repoid>
+      <reporootid>2b197088-c74f-438c-863e-bb2f15e29f82</reporootid>
+    </None>
+    <None Include="Repositories\TabUiElementsRepository.rximg">
+      <BoundTo>024EF950-FE4D-4A5E-B4B3-6FB378725522</BoundTo>
+      <DependentUpon>TabUiElementsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>0321d09d-54f9-4ad7-b1d8-a2aae194e80b</id>
+    </None>
+    <None Include="Repositories\TabUiElementsRepository.rxrep">
+      <id>024EF950-FE4D-4A5E-B4B3-6FB378725522</id>
+      <repoid>92af4717-d821-471d-a241-196b7ad8b0b0</repoid>
+      <reporootid>f63e9464-0aa4-4e17-ad72-98dddd6dd876</reporootid>
+    </None>
+    <None Include="StartAUT.rxrec">
+      <id>ab3621be-aac5-4c39-beb4-b781d7275c3f</id>
+      <recordtableid>5d30b947-1082-493a-929a-81044cf72f53</recordtableid>
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PadTecTrainingPartI.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>01136cb9-f45c-453a-a6f0-141f2d0206a2</id>
+    </Content>
+    <Content Include="PadTecTrainingPartI.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>c0c1392a-078b-4ee1-b0bf-07d427c7d6a7</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules">
+      <id>07717d9e-56f9-42c0-a33d-f2fa0dee2d3a</id>
+    </Folder>
+    <Folder Include="Modules\Geral">
+      <id>3303b6d4-198b-4f2f-aea7-1cd11b9b6a42</id>
+    </Folder>
+    <Folder Include="Modules\TabDynamicIDs">
+      <id>7288e589-e441-4b00-8d11-5341ca8748bd</id>
+    </Folder>
+    <Folder Include="Modules\TabDataBase">
+      <id>3a97e5e9-3191-45ba-a8ef-f340da7477fd</id>
+    </Folder>
+    <Folder Include="Modules\TabImageBased">
+      <id>72b6effc-8604-4b6a-97ed-3752eec581fd</id>
+    </Folder>
+    <Folder Include="Modules\TabUi-Element">
+      <id>62a77ac7-b112-4f72-be67-20646620dd80</id>
+    </Folder>
+    <Folder Include="AUT Aplication Under Test">
+      <id>7da9724a-5e9f-4045-8df7-1dcb01ad636d</id>
+    </Folder>
+    <Folder Include="Repositories">
+      <id>985869d1-4c49-4235-a52f-6c8bcf932fe3</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

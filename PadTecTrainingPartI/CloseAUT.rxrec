@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="45f7962c-069e-40a5-a8c6-21244136a09c"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="PadTecTrainingPartI">
+	</codegen>
+	<variables>
+		<var
+		id="6bbd2c86-50ea-4063-b5cf-b819f1e5a88f"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="7e14dfa1-2728-4f0b-a93b-f77a3b01a372">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="a48f6cd7-90b5-425a-bb3c-6eab79ba34fb"
+	name="TabIntroductionRepository"
+	relativepath="Repositories\TabIntroductionRepository.rxrep">
+		<codegen
+		classname="TabIntroductionRepository"
+		namespace="PadTecTrainingPartI.Repositories">
+		</codegen>
+		<rootfolder
+		id="82029641-968e-469d-9a20-d3e878f2c53d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

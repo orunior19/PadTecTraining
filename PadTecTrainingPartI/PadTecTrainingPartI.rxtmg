@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="PadTecTrainingPartI"
+      id="6e47e44b-2205-420d-a0fb-18a78a98c970"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="PadTecTrainingPartI"
+      id="6e47e44b-2205-420d-a0fb-18a78a98c970"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

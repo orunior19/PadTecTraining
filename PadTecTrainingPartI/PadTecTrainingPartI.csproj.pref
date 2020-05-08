@@ -1,0 +1,13 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="PadTecTrainingPartI.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="PadTecTrainingPartI.rxtst" />
+    <Element value="Modules\TabUi-Element\SelectRedLight.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

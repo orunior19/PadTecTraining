@@ -1,0 +1,271 @@
+﻿<repository
+id="61966f2e-6a4e-41f7-9a2b-10fec406aea5"
+name="TabTestDataBaseRepository">
+	<codegen
+	classname="TabTestDataBaseRepository"
+	namespace="PadTecTrainingPartI.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="2b197088-c74f-438c-863e-bb2f15e29f82"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="00d0004b-fcbd-4274-849a-e43623690f21"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpagelist,accessible"
+			capname="tabpage"
+			id="65f198ad-c00f-4abf-9c10-ec252b80fae7"
+			name="TabPage"
+			refimgid="85087046-473e-460d-8b03-70a9e5a7ac96"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/?/?/tabpage[@accessiblename=$varTab]
+			</item>
+			<folder
+			capname="tabpage"
+			id="1ecc3719-6836-4fd2-b64e-92f6332cb6d7"
+			isrooted="True"
+			name="RxTabStandard"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="8655294a-282a-4c68-82f0-287f332c7339"
+				name="TxtFirstName"
+				refimgid="a3e9fa63-56c2-45c9-a395-494efd6205da"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='txtFirstName']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='txtFirstName']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a7d93d1c-922b-4eb2-a8c5-f8a15e2bb287"
+				name="TxtLastName"
+				refimgid="0a567d4c-95f7-4779-93a8-ecba44d93228"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='txtLastName']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='txtLastName']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="0a0e59e0-a5aa-444c-8b9c-9f760aa16d2e"
+				name="CmbDepartment"
+				refimgid="f5f99ad9-dabf-48e0-b99b-c78058663110"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/combobox[@controlname='cmbDepartment']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/combobox[@controlname='cmbDepartment']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="7fd7afc6-a542-47a8-8347-640d1a917e77"
+				name="UpDownEdit"
+				refimgid="a094729a-0db5-4450-9c4d-ea83f4728118"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/container[@controlname='txtAge']/text[@controlname='upDownEdit']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/?/?/text[@controlname='upDownEdit']
+				</item>
+				<folder
+				capname="unknown"
+				id="bd4ddfbd-889e-4590-8841-95eac2227150"
+				isrooted="True"
+				name="Genders"
+				refimgid="c7eb4016-42a3-4033-9930-0dcea17277ab"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="radiobutton"
+					id="2042947c-86da-41be-9c65-a7883210bb25"
+					name="RadioButtonSelected"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/?/?/radiobutton[@accessiblename=$varGender]
+					</item>
+					<basepath>
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/container[@controlname='grpGender']/?/?
+					</basepath>
+				</folder>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="70ba2f6d-b420-4cca-827f-92c48ff84fc8"
+				name="BtnAddPerson"
+				refimgid="1ab2bf70-32dd-4111-848d-568ded7544fb"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/button[@controlname='btnAddPerson']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnAddPerson']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="6a6f13be-0ddc-4ed8-9908-f38934c06f4e"
+				name="LblNumberOfPersonsNumber"
+				refimgid="472ebff8-b311-427e-bfac-fe1e95db1b41"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/text[@controlname='lblNumberOfPersonsNumber']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='lblNumberOfPersonsNumber']
+				</item>
+				<folder
+				capname="unknown"
+				id="ac038457-d853-48fc-acb0-a586bca9cf68"
+				isrooted="True"
+				name="ListPersons"
+				refimgid="dc774d3e-0449-4c5f-839f-9b46c0f2f4e8"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="listitem"
+					id="46d0c52c-1a2b-478f-8fb8-6371ff007ee6"
+					name="ListItemPerson"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename=$varValidadeResult]
+					</item>
+					<item
+					capname="listitem"
+					id="36bbf02d-508d-40e3-aeee-d1acc26e1d83"
+					name="ListItemContains"
+					searchtimeout="30000ms">
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;$varFirstName]
+					</item>
+					<basepath>
+						/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?
+					</basepath>
+				</folder>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="3c54afd8-bddd-4a32-827b-0c0ef80d9fa5"
+				name="BtnDeletePerson"
+				refimgid="6d44302a-a85c-46e9-9d7a-fd8bc61cb6ea"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAJtJREFUOE9jQAYhISGVQUFBv4jEM6DaICA4OPgUEHdBuaQDoOb/IPoB
+m/C8++xCG+GYFRNfFxbmBWtCBiAD0tLSWO9zClncZxd2xIeBNjFDtSEAyAAg/g3En7BgkBy6WC1U
+KwQABf7X19czQbl4ATAA5YHqf0O5EAAyAMokCowaMKwNYITwCAMMA4CpKwBkCBA3EIHnAzHQAAYG
+AN36kSlpO4aKAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="list"
+		id="701abb23-19d9-4dd6-bf2f-049c5b474106"
+		isrooted="True"
+		name="List1000"
+		refpath="/list[@controlid='1000']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="3c92d433-45f4-4131-a168-ef223cda787e"
+			name="SelectDepartment"
+			refimgid="28c8911f-d3e3-4b9e-917a-b4aedef54f11"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text=$varDepartment]
+			</item>
+			<basepath>
+				/list[@controlid='1000']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="cc3d7c73-394a-4a34-86f5-5bbc75bbb08c"
+		name="varTab">
+			Test database
+		</var>
+		<var
+		id="a1e31cf7-2c5f-4836-b49e-d2cc45a57555"
+		name="varGender">
+		</var>
+		<var
+		id="3d86646c-1aa7-4a7c-a12e-1ebd87be51c4"
+		name="varDepartment">
+		</var>
+		<var
+		id="860f57ff-2cc9-4330-a5ca-b4b71c971ba4"
+		name="varValidadeResult">
+		</var>
+		<var
+		id="9bced93a-98c7-4f60-8505-d91946b72a9d"
+		name="varFirstName">
+		</var>
+	</variables>
+</repository>

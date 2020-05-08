@@ -1,0 +1,53 @@
+﻿<repository
+id="da9876ab-02dd-4284-8e85-af6dc4471175"
+name="SelectTabRepository">
+	<codegen
+	classname="SelectTabRepository"
+	namespace="PadTecTrainingPartI.Repositories">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="43d743c3-ce4c-4cbc-a29f-5479a815e3ea"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		capname="form"
+		id="ae783918-b0d9-4585-936e-d724edc85de8"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpagelist,accessible"
+			capname="tabpage"
+			id="d9ebd652-d756-484d-b642-820cf4eda552"
+			name="TabPage"
+			refimgid="f654fffd-bc59-4491-b1a1-6eb4cc612f6f"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/?/?/tabpage[@accessiblename=$varTab]
+			</item>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAAJtJREFUOE9jQAYhISGVQUFBv4jEM6DaICA4OPgUEHdBuaQDoOb/IPoB
+m/C8++xCG+GYFRNfFxbmBWtCBiAD0tLSWO9zClncZxd2xIeBNjFDtSEAyAAg/g3En7BgkBy6WC1U
+KwQABf7X19czQbl4ATAA5YHqf0O5EAAyAMokCowaMKwNYITwCAMMA4CpKwBkCBA3EIHnAzHQAAYG
+AN36kSlpO4aKAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="2ee607b2-0e27-4ef4-8b1f-a9da562f3b92"
+		name="varTab">
+			Introduction
+		</var>
+	</variables>
+</repository>

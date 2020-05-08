@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="6dfd00bb-13b3-4bf4-94ae-da918ce27b3a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="InsertName"
+	namespace="PadTecTrainingPartI">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="a48f6cd7-90b5-425a-bb3c-6eab79ba34fb"
+	name="TabIntroductionRepository"
+	relativepath="Repositories\TabIntroductionRepository.rxrep">
+		<codegen
+		classname="TabIntroductionRepository"
+		namespace="PadTecTrainingPartI.Repositories">
+		</codegen>
+		<rootfolder
+		id="82029641-968e-469d-9a20-d3e878f2c53d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		InsertName.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

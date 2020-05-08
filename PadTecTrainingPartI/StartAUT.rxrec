@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="5d30b947-1082-493a-929a-81044cf72f53"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="PadTecTrainingPartI">
+	</codegen>
+	<variables>
+		<var
+		id="9a5dc4e8-c993-4ecc-9ae3-b941009ea3ca"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Users\CSouza\Documents\Ranorex\RanorexStudio Projects\PadTecTrainingPartI\PadTecTrainingPartI\AUT Aplication Under Test\RxDemoApp.exe
+			</filename>
+			<workingdir>
+				C:\Users\CSouza\Documents\Ranorex\RanorexStudio Projects\PadTecTrainingPartI\PadTecTrainingPartI\AUT Aplication Under Test
+			</workingdir>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="a48f6cd7-90b5-425a-bb3c-6eab79ba34fb"
+	name="TabIntroductionRepository"
+	relativepath="Repositories\TabIntroductionRepository.rxrep">
+		<codegen
+		classname="TabIntroductionRepository"
+		namespace="PadTecTrainingPartI.Repositories">
+		</codegen>
+		<rootfolder
+		id="82029641-968e-469d-9a20-d3e878f2c53d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

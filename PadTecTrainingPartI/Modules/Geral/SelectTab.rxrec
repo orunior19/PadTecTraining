@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cf02b4fd-375f-4ec2-a611-af163aaae09a"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="SelectTab"
+	namespace="PadTecTrainingPartI.Modules.Geral">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Select"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7ca8df8e-f940-4409-9ee6-7161b4061bd2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="d9ebd652-d756-484d-b642-820cf4eda552"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/?/?/tabpage[@accessiblename='Introduction']
+				</path>
+			</info>
+			<arguments
+			id="0aa0560a-8103-4c12-a328-ba189f40d29c">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="da9876ab-02dd-4284-8e85-af6dc4471175"
+	name="SelectTabRepository"
+	relativepath="..\..\Repositories\SelectTabRepository.rxrep">
+		<codegen
+		classname="SelectTabRepository"
+		namespace="PadTecTrainingPartI.Repositories">
+		</codegen>
+		<rootfolder
+		id="43d743c3-ce4c-4cbc-a29f-5479a815e3ea"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		SelectTab.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

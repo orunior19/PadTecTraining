@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d96d098a-c0cd-49a8-9807-91355b1d8c64"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="WriteCountNumber"
+	namespace="PadTecTrainingPartI.Modules.TabDataBase">
+	</codegen>
+	<variables>
+		<var
+		id="dd87e255-60aa-4b80-9bc4-cfd164316c72"
+		name="WriteCount">
+		</var>
+	</variables>
+	<recorditems>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Warn;30"
+		searchpropertyid="76d58f41-e29e-40cb-b740-7b8fd631730c">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="WriteCount">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+	</recorditems>
+	<repository
+	id="a48f6cd7-90b5-425a-bb3c-6eab79ba34fb"
+	name="TabIntroductionRepository"
+	relativepath="..\..\Repositories\TabIntroductionRepository.rxrep">
+		<codegen
+		classname="TabIntroductionRepository"
+		namespace="PadTecTrainingPartI.Repositories">
+		</codegen>
+		<rootfolder
+		id="82029641-968e-469d-9a20-d3e878f2c53d"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		WriteCountNumber.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,12 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "PadTecTrainingPartI",
+    "RunConfig": "PartialRunDataBase"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "SecondSuite",
+    "RunConfig": "TestRun"
+  }
+]

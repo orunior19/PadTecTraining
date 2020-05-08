@@ -1,0 +1,20 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <string>{1E14D83A-3B59-43F3-9AA5-486B6027016B}</string>
+      <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>07717d9e-56f9-42c0-a33d-f2fa0dee2d3a</string>
+      <string>72b6effc-8604-4b6a-97ed-3752eec581fd</string>
+      <string>cf02b4fd-375f-4ec2-a611-af163aaae09a</string>
+      <string>62a77ac7-b112-4f72-be67-20646620dd80</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution PadTecTrainingPartI[PadTecTrainingPartI[]]]&#xD;&#xA;Solution PadTecTrainingPartI\PadTecTrainingPartI\PadTecTrainingPartI.rxtst&#xD;&#xA;Solution PadTecTrainingPartI\Solution Items" />
+  <StartupProject value="{1E14D83A-3B59-43F3-9AA5-486B6027016B}" />
+</Properties>
