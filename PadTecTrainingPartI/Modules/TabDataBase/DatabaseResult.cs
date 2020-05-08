@@ -177,12 +177,12 @@ namespace PadTecTrainingPartI.Modules.TabDataBase
             repo.RxMainFrame.RxTabStandard.BtnDeletePerson.Click();
             Delay.Milliseconds(0);
             
-            //Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'RxMainFrame.RxTabStandard.TxtFirstName' and assigning its value to variable 'varPerson'.", repo.RxMainFrame.RxTabStandard.TxtFirstNameInfo, new RecordItemIndex(4));
-            //varPerson = repo.RxMainFrame.RxTabStandard.TxtFirstName.Element.GetAttributeValueText("Text");
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Text' from item 'RxMainFrame.RxTabStandard.TxtFirstName' and assigning its value to variable 'varPerson'.", repo.RxMainFrame.RxTabStandard.TxtFirstNameInfo, new RecordItemIndex(4));
+            varPerson = repo.RxMainFrame.RxTabStandard.TxtFirstName.Element.GetAttributeValueText("Text");
+            Delay.Milliseconds(0);
             
-            //varPerson = retornaNome(repo.RxMainFrame.RxTabStandard.TxtFirstNameInfo, "");
-            //Delay.Milliseconds(0);
+            varPerson = retornaNome(repo.RxMainFrame.RxTabStandard.TxtFirstNameInfo, "");
+            Delay.Milliseconds(0);
             
         }
 
