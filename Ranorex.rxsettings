@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="9.2">
+rxversion="9.3">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -426,6 +426,9 @@ rxversion="9.2">
 	<TestCase.Retry.ShowWarning>
 		True
 	</TestCase.Retry.ShowWarning>
+	<TestCase.Autobind.Action>
+		AskUser
+	</TestCase.Autobind.Action>
 	<Testing.Data.ExcelDataLoadingPreference>
 		PreferExcel
 	</Testing.Data.ExcelDataLoadingPreference>
@@ -569,8 +572,6 @@ rxversion="9.2">
 	<plugins.wpfcore.tree.realizedvirtualizeditems>
 		False
 	</plugins.wpfcore.tree.realizedvirtualizeditems>
-	<plugins.wpfcore.flags>
-	</plugins.wpfcore.flags>
 	<plugins.wpf.ExpensiveAttributesEnabled>
 		True
 	</plugins.wpf.ExpensiveAttributesEnabled>
@@ -595,6 +596,9 @@ rxversion="9.2">
 	<plugin.rawtext.captureansi>
 		True
 	</plugin.rawtext.captureansi>
+	<plugin.rawtext.capturegdiplus>
+		False
+	</plugin.rawtext.capturegdiplus>
 	<plugin.rawtext.includetextinrectcomparison>
 		False
 	</plugin.rawtext.includetextinrectcomparison>
@@ -651,6 +655,8 @@ rxversion="9.2">
 	<plugin.cef.processblacklist>
 		spotify;chrome;
 	</plugin.cef.processblacklist>
+	<plugin.cef.domblacklist>
+	</plugin.cef.domblacklist>
 	<plugin.cef.forcehwndrectangle>
 		False
 	</plugin.cef.forcehwndrectangle>
@@ -680,4 +686,6 @@ rxversion="9.2">
 	<plugin.webdriver.screenshotUpdate>
 		False
 	</plugin.webdriver.screenshotUpdate>
+	<plugins.wpfcore.flags>
+	</plugins.wpfcore.flags>
 </configuration>

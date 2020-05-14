@@ -13,7 +13,6 @@ C:\Users\CSouza\Documents\Ranorex\RanorexStudio Projects\PadTecTrainingPartI\Pad
 C:\Users\CSouza\Documents\Ranorex\RanorexStudio Projects\PadTecTrainingPartI\PadTecTrainingPartI\bin\Debug\DataBase.xlsx
 C:\Users\CSouza\Documents\Ranorex\RanorexStudio Projects\PadTecTrainingPartI\PadTecTrainingPartI\bin\Debug\AUT Aplication Under Test\RxDemoApp.exe
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\AUT Aplication Under Test\RxDemoApp.exe
-C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\DataBase.xlsx
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\SecondSuite.rxtst
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\PadTecTrainingPartI.rxsqc
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\PadTecTrainingPartI.rxtmg
@@ -26,3 +25,4 @@ C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\bin\Debug\Ranorex.Core.
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\obj\x86\Debug\PadTecTrainingPartI.csprojResolveAssemblyReference.cache
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\obj\x86\Debug\PadTecTrainingPartI.exe
 C:\Git\Testes\Ranorex\PadTecTraining\PadTecTrainingPartI\obj\x86\Debug\PadTecTrainingPartI.pdb
+C:\Git\Testes\Ranorex\padtectraining\PadTecTrainingPartI\bin\Debug\DataSources\DataBase.xlsx

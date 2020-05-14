@@ -8,6 +8,9 @@
     <Element value="Modules\TabUi-Element\SelectRedLight.rxrec" />
   </Array>
   <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
     <Array name="recentusercodeselections" />
   </Properties>
 </Properties>

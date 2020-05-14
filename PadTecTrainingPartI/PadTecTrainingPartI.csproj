@@ -126,17 +126,17 @@
     <Compile Include="AssemblyInfo.cs">
       <id>8e926b46-db07-49f3-958c-a60fa8f95987</id>
     </Compile>
-    <Compile Include="CloseAUT.cs">
-      <BoundTo>ea10b848-8932-4626-8eab-2293c4f2521c</BoundTo>
+    <Compile Include="Modules\Geral\CloseAUT.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>074e3a5d-cadc-4b43-8bc7-55f383cc44bc</id>
-    </Compile>
-    <Compile Include="CloseAUT.UserCode.cs">
       <BoundTo>ea10b848-8932-4626-8eab-2293c4f2521c</BoundTo>
+    </Compile>
+    <Compile Include="Modules\Geral\CloseAUT.UserCode.cs">
       <DependentUpon>CloseAUT.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>12df1530-d08a-4b9a-b5de-858666f6c064</id>
+      <BoundTo>ea10b848-8932-4626-8eab-2293c4f2521c</BoundTo>
     </Compile>
     <Compile Include="Modules\Geral\DelayTwoSeconds.cs">
       <BoundTo>f107a1b5-c285-40fd-9d61-b77be104f3da</BoundTo>
@@ -161,6 +161,30 @@
       <UserCode>true</UserCode>
       <id>50f72394-b72f-4fff-ac16-889cb4350a90</id>
       <BoundTo>e122c262-befa-4caa-a976-f38425f80341</BoundTo>
+    </Compile>
+    <Compile Include="Modules\Geral\StartAUT.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17f56b2b-0ab7-4e35-8dc3-e4f7eae1414d</id>
+      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
+    </Compile>
+    <Compile Include="Modules\Geral\StartAUT.UserCode.cs">
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1a014e61-9142-4aae-8a6a-3aae146dedc5</id>
+      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
+    </Compile>
+    <Compile Include="Modules\IntroductionPage\InsertName.cs">
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>17cdb5ec-602e-42fb-a318-fa06bd680c82</id>
+      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
+    </Compile>
+    <Compile Include="Modules\IntroductionPage\InsertName.UserCode.cs">
+      <DependentUpon>InsertName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0fea2254-186b-4dcf-9541-996a922f1f17</id>
+      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
     </Compile>
     <Compile Include="Modules\TabDataBase\AddPersons.cs">
       <DependentUpon>AddPersons.rxrec</DependentUpon>
@@ -261,18 +285,6 @@
     <Compile Include="Program.cs">
       <id>e6a83b5d-06ea-40ae-b7a0-3cdfb005a1b9</id>
     </Compile>
-    <Compile Include="InsertName.cs">
-      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
-      <DependentUpon>InsertName.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>17cdb5ec-602e-42fb-a318-fa06bd680c82</id>
-    </Compile>
-    <Compile Include="InsertName.UserCode.cs">
-      <BoundTo>c20d0c31-5450-481d-ad45-f3b1d4abdd56</BoundTo>
-      <DependentUpon>InsertName.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>0fea2254-186b-4dcf-9541-996a922f1f17</id>
-    </Compile>
     <Compile Include="Repositories\DynamicIDsRepository.cs">
       <BoundTo>9565DEAB-1714-4068-BD05-3655FECDCC74</BoundTo>
       <DependentUpon>DynamicIDsRepository.rxrep</DependentUpon>
@@ -309,18 +321,6 @@
       <RepositoryCode>true</RepositoryCode>
       <id>b2ff08a0-e74e-4401-9f3b-751606bcad77</id>
     </Compile>
-    <Compile Include="StartAUT.cs">
-      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <RecorderCode>true</RecorderCode>
-      <id>17f56b2b-0ab7-4e35-8dc3-e4f7eae1414d</id>
-    </Compile>
-    <Compile Include="StartAUT.UserCode.cs">
-      <BoundTo>ab3621be-aac5-4c39-beb4-b781d7275c3f</BoundTo>
-      <DependentUpon>StartAUT.rxrec</DependentUpon>
-      <UserCode>true</UserCode>
-      <id>1a014e61-9142-4aae-8a6a-3aae146dedc5</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SecondSuite.rxtst">
@@ -334,19 +334,14 @@
       <id>7aebb4ed-7e21-4dce-8eb7-7ed5c0b44ff1</id>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="CloseAUT.rxrec">
-      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
-      <id>ea10b848-8932-4626-8eab-2293c4f2521c</id>
-      <recordtableid>45f7962c-069e-40a5-a8c6-21244136a09c</recordtableid>
-    </None>
-    <None Include="DataBase.xlsx">
+    <None Include="DataSources\DataBase.xlsx">
       <id>1101ff04-5599-4cc7-8679-50e0d0b5f821</id>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="InsertName.rxrec">
+    <None Include="Modules\Geral\CloseAUT.rxrec">
       <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
-      <id>c20d0c31-5450-481d-ad45-f3b1d4abdd56</id>
-      <recordtableid>6dfd00bb-13b3-4bf4-94ae-da918ce27b3a</recordtableid>
+      <id>ea10b848-8932-4626-8eab-2293c4f2521c</id>
+      <recordtableid>45f7962c-069e-40a5-a8c6-21244136a09c</recordtableid>
     </None>
     <None Include="Modules\Geral\DelayTwoSeconds.rxrec">
       <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
@@ -357,6 +352,16 @@
       <id>e122c262-befa-4caa-a976-f38425f80341</id>
       <recordtableid>cf02b4fd-375f-4ec2-a611-af163aaae09a</recordtableid>
       <BoundTo>8B95DC42-4079-40C1-BCC7-AD38A09F1626</BoundTo>
+    </None>
+    <None Include="Modules\Geral\StartAUT.rxrec">
+      <id>ab3621be-aac5-4c39-beb4-b781d7275c3f</id>
+      <recordtableid>5d30b947-1082-493a-929a-81044cf72f53</recordtableid>
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+    </None>
+    <None Include="Modules\IntroductionPage\InsertName.rxrec">
+      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
+      <id>c20d0c31-5450-481d-ad45-f3b1d4abdd56</id>
+      <recordtableid>6dfd00bb-13b3-4bf4-94ae-da918ce27b3a</recordtableid>
     </None>
     <None Include="Modules\TabDataBase\AddPersons.rxrec">
       <BoundTo>570F74AC-B7B9-4339-B199-2C1D62BF26DA</BoundTo>
@@ -468,11 +473,6 @@
       <repoid>92af4717-d821-471d-a241-196b7ad8b0b0</repoid>
       <reporootid>f63e9464-0aa4-4e17-ad72-98dddd6dd876</reporootid>
     </None>
-    <None Include="StartAUT.rxrec">
-      <id>ab3621be-aac5-4c39-beb4-b781d7275c3f</id>
-      <recordtableid>5d30b947-1082-493a-929a-81044cf72f53</recordtableid>
-      <BoundTo>8f5d19ac-14de-413e-8616-00988e54fb71</BoundTo>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PadTecTrainingPartI.rxtmg">
@@ -491,6 +491,9 @@
     <Folder Include="Modules\Geral">
       <id>3303b6d4-198b-4f2f-aea7-1cd11b9b6a42</id>
     </Folder>
+    <Folder Include="Modules\IntroductionPage">
+      <id>86970fc7-2518-438d-aa9d-81b8317f06b5</id>
+    </Folder>
     <Folder Include="Modules\TabDynamicIDs">
       <id>7288e589-e441-4b00-8d11-5341ca8748bd</id>
     </Folder>
@@ -505,6 +508,9 @@
     </Folder>
     <Folder Include="AUT Aplication Under Test">
       <id>7da9724a-5e9f-4045-8df7-1dcb01ad636d</id>
+    </Folder>
+    <Folder Include="DataSources">
+      <id>a44fcac2-20d3-4056-99e3-1a127b0c6cd9</id>
     </Folder>
     <Folder Include="Repositories">
       <id>985869d1-4c49-4235-a52f-6c8bcf932fe3</id>
