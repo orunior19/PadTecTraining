@@ -20,38 +20,51 @@ using Ranorex.Core;
 using Ranorex.Core.Testing;
 using Ranorex.Core.Repository;
 
-namespace PadTecTrainingPartI
+namespace PadTecTrainingPartI.Modules.Geral
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The InsertName recording.
+    ///The CloseAUT recording.
     /// </summary>
-    [TestModule("6dfd00bb-13b3-4bf4-94ae-da918ce27b3a", ModuleType.Recording, 1)]
-    public partial class InsertName : ITestModule
+    [TestModule("45f7962c-069e-40a5-a8c6-21244136a09c", ModuleType.Recording, 1)]
+    public partial class CloseAUT : ITestModule
     {
         /// <summary>
         /// Holds an instance of the global::PadTecTrainingPartI.Repositories.TabIntroductionRepository repository.
         /// </summary>
         public static global::PadTecTrainingPartI.Repositories.TabIntroductionRepository repo = global::PadTecTrainingPartI.Repositories.TabIntroductionRepository.Instance;
 
-        static InsertName instance = new InsertName();
+        static CloseAUT instance = new CloseAUT();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public InsertName()
+        public CloseAUT()
         {
+            CloseAutProcessIDVar = "-1";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static InsertName Instance
+        public static CloseAUT Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _CloseAutProcessIDVar;
+
+        /// <summary>
+        /// Gets or sets the value of variable CloseAutProcessIDVar.
+        /// </summary>
+        [TestVariable("6bbd2c86-50ea-4063-b5cf-b819f1e5a88f")]
+        public string CloseAutProcessIDVar
+        {
+            get { return _CloseAutProcessIDVar; }
+            set { _CloseAutProcessIDVar = value; }
+        }
 
 #endregion
 
@@ -79,6 +92,10 @@ namespace PadTecTrainingPartI
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Application", "Closing application with Process ID bound to variable $CloseAutProcessIDVar.", new RecordItemIndex(0));
+            Host.Current.CloseApplication(int.Parse(CloseAutProcessIDVar), 500);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data

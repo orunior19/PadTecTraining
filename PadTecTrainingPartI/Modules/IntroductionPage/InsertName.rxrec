@@ -20,7 +20,7 @@ mode="Desktop">
 	</useDefaultItemLogging>
 	<codegen
 	classname="InsertName"
-	namespace="PadTecTrainingPartI">
+	namespace="PadTecTrainingPartI.Modules.IntroductionPage">
 	</codegen>
 	<variables>
 	</variables>
@@ -29,7 +29,7 @@ mode="Desktop">
 	<repository
 	id="a48f6cd7-90b5-425a-bb3c-6eab79ba34fb"
 	name="TabIntroductionRepository"
-	relativepath="Repositories\TabIntroductionRepository.rxrep">
+	relativepath="..\..\Repositories\TabIntroductionRepository.rxrep">
 		<codegen
 		classname="TabIntroductionRepository"
 		namespace="PadTecTrainingPartI.Repositories">

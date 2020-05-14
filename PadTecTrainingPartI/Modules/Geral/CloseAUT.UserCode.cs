@@ -20,9 +20,9 @@ using Ranorex.Core;
 using Ranorex.Core.Repository;
 using Ranorex.Core.Testing;
 
-namespace PadTecTrainingPartI
+namespace PadTecTrainingPartI.Modules.Geral
 {
-    public partial class InsertName
+    public partial class CloseAUT
     {
         /// <summary>
         /// This method gets called right after the recording has been started.
