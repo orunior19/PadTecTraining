@@ -539,8 +539,11 @@
 			name="setup">
 			</setup>
 			<testcase
+			datarangeactive="True"
 			datasource="PersonsData"
 			id="fe403107-2342-4c81-9345-0021ab8fa20c"
+			maxrange="0"
+			minrange="0"
 			name="TabTestDataBase">
 				<parameters>
 					<param

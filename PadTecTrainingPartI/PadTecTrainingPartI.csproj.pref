@@ -5,7 +5,6 @@
   <Array name="bookmarks" />
   <Array name="files">
     <Element value="PadTecTrainingPartI.rxtst" />
-    <Element value="Modules\TabUi-Element\SelectRedLight.rxrec" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">
